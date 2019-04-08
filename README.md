@@ -14,3 +14,41 @@ the probablity of future crimes?
 # Size of Data
 Rows - 2,116,499<br/>
 Columns(Attributes) - 27
+# What next?
+Performing data analysis steps on this data we try to find and answer a few hypothesis,<br/>
+Is there a useful pattern that can be derived from the given data?<br/>
+Can a classification model be built to predict the nature of a crime given the time and location of the report?<br/>
+Do the actual crimes and the area in which they occur exhibit a trend?<br/>
+# Attributes
+The raw data taken from google public bigquery dataset has the following attributes:<br/>
+1) unique_key - A unique identification number for the record<br/>
+2) address - Full address of where the incident occcured<br/>
+3) census_tract - Census tract value for the address<br/>
+4) clearance_date - Date and time when the case was closed<br/>
+5) clearance_status - Status of the case<br/>
+6) council_district_code - District code of the place where the incident occured<br/>
+7) description - Subcategory of the primary nature of crime<br/>
+8) district - Police district code where the incident occured<br/>
+9) latitude<br/>
+10) longitude<br/>
+11) location - (lat, long) value of incicdent address<br/>
+12) location_description - description of location where the incident occured<br/>
+13) primary_type - type of crime according to the NIBRS/UCR code<br/>
+14) timestamp - time when the incident occcured<br/>
+15) x_coordinate<br/>
+16) y_coordinate<br/>
+17) year - year in which incident occured<br/>
+18) zipcode - zipcode where the incident occured<br/>
+
+# Data Ingestion
+The raw data is already available on bigquery public dataset on google cloud. we copy the data into our project dataset.
+We then run few queries first to take a look at the data and look for any problems in any of the rows. 
+Next step is to trim the data to get a specific time period, we only keep records from 2014-01-01 to 2016-12-31. 
+The most important categorical value 'primary_type' is redundant, we change this to have 7 primary types of crime [Rape, Theft, Robbery, Assault, Burglary, Murder, Homicide]
+For further preprocessing we use notebooks and find that location value is missing for more than half of the entries. By using python's inbuilt geopy package.
+
+# ML
+Our plan is to use pyspark to split the data into training and test and then do a logistic regression model and check results.
+And then use different models  from which we get the error, rmse, etc. and compare for all models. Then decide on which model would be a better fit our data.
+
+# Citations
