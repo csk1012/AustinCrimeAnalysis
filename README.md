@@ -14,4 +14,3 @@ the probablity of future crimes?
 # Size of Data
 Rows - 2,116,499<br/>
 Columns(Attributes) - 27
-# Attribute Description
