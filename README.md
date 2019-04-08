@@ -51,4 +51,7 @@ For further preprocessing we use notebooks and find that location value is missi
 Our plan is to use pyspark to split the data into training and test and then do a logistic regression model and check results.
 And then use different models  from which we get the error, rmse, etc. and compare for all models. Then decide on which model would be a better fit our data.
 
-# Citations
+# References
+[1] Chen, H; Chung, W; Xu, JJ; Wang, G; Qin, Y; Chau, M. 2004. Crime data mining: A general framework and some examples. Avaolable at:http://hdl.handle.net/10722/45461
+[2]
+
