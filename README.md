@@ -58,5 +58,6 @@ And then use different models  from which we get the error, rmse, etc. and compa
 
 # References
 [1] Chen, H; Chung, W; Xu, JJ; Wang, G; Qin, Y; Chau, M. 2004. Crime data mining: A general framework and some examples. Available at:http://hdl.handle.net/10722/45461 <br/>
-[2] S. B. Kotsiantis, D. Kanellopoulos and P. E. Pintelas. 2006. Data Preprocessing for Supervised Leaning. Volume 1, Number 1,  INTERNATIONAL JOURNAL OF COMPUTER SCIENCE.
+[2] S. B. Kotsiantis, D. Kanellopoulos and P. E. Pintelas. 2006. Data Preprocessing for Supervised Leaning. Volume 1, Number 1,  INTERNATIONAL JOURNAL OF COMPUTER SCIENCE. <br/>
+[3] John M. Chambers, William S. Cleveland, Beat Kleiner, Paul A. Tukey. 2017. Graphical Methods for Data Analysis. Availabble at: https://content.taylorfrancis.com/books/download?dac=C2017-0-66641-7&isbn=9781351080750&format=googlePreviewPdf
 
