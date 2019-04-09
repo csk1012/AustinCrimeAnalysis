@@ -40,6 +40,7 @@ The raw data taken from google public bigquery dataset has the following attribu
 17) year - year in which incident occured<br/>
 18) zipcode - zipcode where the incident occured<br/>
 
+# Datastudio Report
 # Data Ingestion
 The raw data is already available on bigquery public dataset on google cloud. we copy the data into our project dataset.
 We then run few queries first to take a look at the data and look for any problems in any of the rows. 
