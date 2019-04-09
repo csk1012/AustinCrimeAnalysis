@@ -57,6 +57,6 @@ Our plan is to use pyspark to split the data into training and test and then do 
 And then use different models  from which we get the error, rmse, etc. and compare for all models. Then decide on which model would be a better fit our data.
 
 # References
-[1] Chen, H; Chung, W; Xu, JJ; Wang, G; Qin, Y; Chau, M. 2004. Crime data mining: A general framework and some examples. Avaolable at:http://hdl.handle.net/10722/45461
-[2]
+[1] Chen, H; Chung, W; Xu, JJ; Wang, G; Qin, Y; Chau, M. 2004. Crime data mining: A general framework and some examples. Available at:http://hdl.handle.net/10722/45461 <br/>
+[2] S. B. Kotsiantis, D. Kanellopoulos and P. E. Pintelas. 2006. Data Preprocessing for Supervised Leaning. Volume 1, Number 1,  INTERNATIONAL JOURNAL OF COMPUTER SCIENCE.
 
