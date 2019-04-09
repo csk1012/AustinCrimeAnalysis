@@ -44,7 +44,7 @@ The raw data taken from google public bigquery dataset has the following attribu
 This pie chart shows the case status of cases. <b>Dimension:</b> 'clearence_status' <b>Metric:</b> Count of all the cases where 'case_status' is not null.<br/>
 <img src="Screenshot (22).png"></img><br/>
 From the pie chart we see that 82.6% of the cases go uncleared. The following Line chart shows The number and type of crimes committed by month for the year 2015.<br/>
-<img src="Screenshot (23).png"></img> <br/> One basic observation is that Theft is higher compared to other crimes followed by burglary and assault.
+<img src="Screenshot (23).png"></img> <br/> One basic observation is that Theft is higher compared to other crimes followed by burglary and assault. As expected we cannot see a linear trend in some crimes(like Murder,etc.) while other crimes(like Theft, etc.) remain almost unchanged.
 # Data Ingestion
 The raw data is already available on bigquery public dataset on google cloud. we copy the data into our project dataset.
 We then run few queries first to take a look at the data and look for any problems in any of the rows. 
