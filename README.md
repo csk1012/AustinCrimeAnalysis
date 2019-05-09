@@ -44,17 +44,18 @@ The raw data taken from google public bigquery dataset has the following attribu
 This pie chart shows the case status of cases. <b>Dimension:</b> 'clearence_status' <b>Metric:</b> Count of all the cases where 'case_status' is not null.<br/>
 <img src="Screenshot (22).png"></img><br/>
 From the pie chart we see that 82.6% of the cases go uncleared. The following Line chart shows The number and type of crimes committed by month for the year 2015.<br/>
-<img src="Screenshot (23).png"></img> <br/> One basic observation is that Theft is higher compared to other crimes followed by burglary and assault. As expected we cannot see a linear trend in some crimes(like Murder,etc.) while other crimes(like Theft, etc.) remain almost unchanged.
+<img src="Screenshot (23).png"></img> <br/> One basic observation is that Theft is higher compared to other crimes followed by burglary and assault. As expected we cannot see a linear trend in some crimes(like Murder,etc.) while other crimes(like Theft, etc.) remain almost unchanged.<br/>
+More from the report is available in the repository.
 # Data Ingestion
 The raw data is already available on bigquery public dataset on google cloud. we copy the data into our project dataset.
 We then run few queries first to take a look at the data and look for any problems in any of the rows. 
 Next step is to trim the data to get a specific time period, we only keep records from 2014-01-01 to 2016-12-31. 
 The most important categorical value 'primary_type' is redundant, we change this to have 7 primary types of crime [Rape, Theft, Robbery, Assault, Burglary, Murder, Homicide]
 For further preprocessing we use notebooks and find that location value is missing for more than half of the entries. By using python's inbuilt geopy package.
-
+# Data Pre-processing
+All data was preprocessed using BigQuery the statements used have been uploaded as bqs.docx in the repository.<br/>
 # ML
-Our plan is to use pyspark to split the data into training and test and then do a logistic regression model and check results.
-And then use different models  from which we get the error, rmse, etc. and compare for all models. Then decide on which model would be a better fit our data.
+Logistic Regression - Logistic regression is the best analysis to use when the dependent variable is binary. It is used to describe data and to explain the relationship between one dependent binary variable and other variables. For our data we use BigQuery ML to do logistic regreesion to predict the probability that a  case will be solved.
 
 # References
 [1] Chen, H; Chung, W; Xu, JJ; Wang, G; Qin, Y; Chau, M. 2004. Crime data mining: A general framework and some examples. Available at:http://hdl.handle.net/10722/45461 <br/>
